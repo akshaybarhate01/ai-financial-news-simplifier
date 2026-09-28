@@ -1,0 +1,73 @@
+from backend.schemas.auth import (
+    UserRegister,
+    UserLogin,
+    TokenResponse,
+    RefreshTokenRequest,
+    ChangePasswordRequest,
+    ForgotPasswordRequest,
+    ResetPasswordRequest,
+    UserOut,
+)
+from backend.schemas.news import (
+    CategoryOut,
+    SentimentOut,
+    AISummaryOut,
+    CompanyOut,
+    ArticleOut,
+    NewsListResponse,
+)
+from backend.schemas.ai import (
+    SimplifyRequest,
+    SimplifyResponse,
+    ChatMessage,
+    ChatRequest,
+    ChatResponse,
+    DailyBriefResponse,
+)
+from backend.schemas.analytics import (
+    SectorAnalytics,
+    SentimentAnalytics,
+    WeeklyReadingAnalytics,
+    AnalyticsResponse,
+)
+from backend.schemas.user import (
+    UserPreferenceUpdate,
+    UserPreferenceOut,
+    BookmarkCreate,
+    BookmarkOut,
+    ReadingHistoryCreate,
+    ReadingHistoryOut,
+)
+
+__all__ = [
+    "UserRegister",
+    "UserLogin",
+    "TokenResponse",
+    "RefreshTokenRequest",
+    "ChangePasswordRequest",
+    "ForgotPasswordRequest",
+    "ResetPasswordRequest",
+    "UserOut",
+    "CategoryOut",
+    "SentimentOut",
+    "AISummaryOut",
+    "CompanyOut",
+    "ArticleOut",
+    "NewsListResponse",
+    "SimplifyRequest",
+    "SimplifyResponse",
+    "ChatMessage",
+    "ChatRequest",
+    "ChatResponse",
+    "DailyBriefResponse",
+    "SectorAnalytics",
+    "SentimentAnalytics",
+    "WeeklyReadingAnalytics",
+    "AnalyticsResponse",
+    "UserPreferenceUpdate",
+    "UserPreferenceOut",
+    "BookmarkCreate",
+    "BookmarkOut",
+    "ReadingHistoryCreate",
+    "ReadingHistoryOut",
+]

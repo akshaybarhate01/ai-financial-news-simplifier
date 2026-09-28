@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-fintech-surface-50 text-fintech-text-primary antialiased transition-colors duration-150;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  .dark body, body.dark {
+    @apply bg-[#070F1E] text-slate-100;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight text-fintech-navy-900 font-semibold dark:text-white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0B192C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E3E6D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #0891B2;
+}
+
+/* Term Highlight in Article */
+.glossary-term-highlight {
+  @apply text-fintech-cyan-700 dark:text-cyan-400 font-medium underline decoration-fintech-cyan-500/40 dark:decoration-cyan-400/50 decoration-2 underline-offset-4 cursor-pointer hover:bg-fintech-cyan-50 dark:hover:bg-cyan-950/60 hover:decoration-fintech-cyan-600 rounded px-1 transition-colors;
+}
+
+/* Card Subtle Elevation in Light & Dark Mode */
+.fintech-card {
+  @apply bg-white dark:bg-[#0D1B2E] border border-fintech-surface-200 dark:border-slate-800/90 rounded-fintech shadow-fintech transition-all duration-200;
+}
+
+.fintech-card:hover {
+  @apply shadow-fintech-hover border-fintech-surface-300 dark:border-slate-700/80;
+}
+
+.fintech-glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+}
+.dark .fintech-glass {
+  background: rgba(13, 27, 46, 0.92);
+}
